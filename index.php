@@ -30,11 +30,22 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+//Alterar um usuário
 $usuario = new Usuario();
 
 $usuario->loadbyId(8);
 
 $usuario->update("professor", "!@#$%¨&*");
+
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadbyId(8);
+
+$usuario->delete();
 
 echo $usuario;
  ?>
